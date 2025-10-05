@@ -323,7 +323,7 @@ Input → Parse → Load → Execute → Return to prompt.
 
 Acknowledgements:
 
-I would like to give a thanks to my pal braden obrzut for helping me for about an hour and
+I would like to give a thanks to my pal braden obrzut 'BLZUT3' for helping me for about an hour and
 some change with the final teething pains the command line simulator was having,I had been 
 working on it so long and kept trying to fix almost the right thing, but not quite the
 right way, and he suggested the simplest thing was to strcat progname and args
