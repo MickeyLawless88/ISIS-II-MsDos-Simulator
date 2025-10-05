@@ -1,0 +1,1 @@
+path D:\BIN;C:\BIN;C:\SPRINT;C:\WINDOWS;C:\DRDOS 

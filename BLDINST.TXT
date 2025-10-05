@@ -1,0 +1,8 @@
+	I S I S  B U I L D  I N S T R U C T I O N S:
+	
+	Remember to change the path in both the makefile, to match that of your
+	TurboC Base directory, and make sure to change any paths in the bat files if
+	you want to use any of them either, which are not required for compilation.
+	
+		- Mickey W. Lawless	October 5, 2025	6:58 A.M.
+		

@@ -1,0 +1,52 @@
+Notes on ISIS and VISIS
+===== == ==== === =====
+
+ISIS is an ISIS-II simulator for standard Intel processors.  VISIS
+is a simulator for the NEC V20 that uses the V20's 8080 emulation mode.
+
+To run an ISIS-II program simply type:
+
+	isis program args...
+
+or
+	visis program args...
+
+For example:
+
+	isis plm80 test.plm
+
+The ISIS simulator supports the MDS monitor functions that allow
+communication to alternate console devices.  In order to select which
+the COM port is to be used by an ISIS program, you must set the
+environment variable :I1: or :O1: before running VISIS or ISIS.  For
+example, if your serial device is connected to COM1, enter the
+following DOS command:
+
+	set :o1:=com1:
+
+VISIS and ISIS support multiple virtual ISIS drives.  You can map ISIS
+drives :F0:, :F1:, etc. to specific directories or drives on your PC.
+You set environment variables to perform the mapping before running
+ISIS or VISIS.  For example, if you want :F0: to be mapped to the
+directory \ISIS\INTEL, enter the following DOS command:
+
+	set :f0:=\isis\intel
+
+If your ISIS program or your ISIS command line does not use
+an explicit ISIS drive name when opening or loading a file,
+the file is assumed to be located in the current directory.
+
+For examples of the use of these features of ISIS and VISIS,
+please see the file SETISIS.BAT.
+
+If DOS says it's out of environment space when you try to
+use the SET commands above, you must make more environment
+space.  On DOS 2.x, there is no way to increase the space;
+you must delete unused enviroment variables.  On DOS 3.x
+you must put a line such as the following in CONFIG.SYS:
+
+	shell=c:\command.com /p/e:1024
+
+where 1024 is the size of the environment space.  On some versions
+of DOS, the size is given in 16-byte paragraphs; on other versions
+it is in bytes.  Check your DOS manual for more information.
